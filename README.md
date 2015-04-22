@@ -18,10 +18,12 @@ If you are a developer, you can use Realtime Cloud Storage to create database ta
 
  You are ready to go.
 
----
+## The todo list example
+If you want to check a ready to run example using this SDK check the real-time synced todo list manager at [https://github.com/realtime-framework/StorageReactNativeTodo](https://github.com/realtime-framework/StorageReactNativeTodo)
 
 
-###Importing RCTRealtimeCloudStorageIOS to your project
+
+##Importing RCTRealtimeCloudStorageIOS to your project
 
 	var module = require('RCTRealtimeCloudStorageIOS');
 	var RCTRealtimeCloudStorage = new module();
