@@ -52,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5736D5131B46E831009542D8 /* RCTSRWebSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTSRWebSocket.h; sourceTree = "<group>"; };
 		57B209871ADE9E5F004297D4 /* libRCTRealtimeCloudStorage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTRealtimeCloudStorage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B2098A1ADE9E5F004297D4 /* RCTRealtimeCloudStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTRealtimeCloudStorage.h; sourceTree = "<group>"; };
 		57B2098C1ADE9E5F004297D4 /* RCTRealtimeCloudStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTRealtimeCloudStorage.m; sourceTree = "<group>"; };
@@ -72,7 +73,6 @@
 		57B209C71ADEA1E8004297D4 /* REST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REST.m; sourceTree = "<group>"; };
 		57B209C81ADEA1E8004297D4 /* SBalancer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBalancer.h; sourceTree = "<group>"; };
 		57B209C91ADEA1E8004297D4 /* SBalancer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBalancer.m; sourceTree = "<group>"; };
-		57B209D21ADEA1E8004297D4 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
 		57B209D31ADEA1E8004297D4 /* StorageContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageContext.h; sourceTree = "<group>"; };
 		57B209D41ADEA1E8004297D4 /* StorageContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageContext.m; sourceTree = "<group>"; };
 		57B209D51ADEA1E8004297D4 /* StorageRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageRef.m; sourceTree = "<group>"; };
@@ -171,7 +171,7 @@
 				57B209C71ADEA1E8004297D4 /* REST.m */,
 				57B209C81ADEA1E8004297D4 /* SBalancer.h */,
 				57B209C91ADEA1E8004297D4 /* SBalancer.m */,
-				57B209D21ADEA1E8004297D4 /* SRWebSocket.h */,
+				5736D5131B46E831009542D8 /* RCTSRWebSocket.h */,
 				57B209D31ADEA1E8004297D4 /* StorageContext.h */,
 				57B209D41ADEA1E8004297D4 /* StorageContext.m */,
 				57B209D51ADEA1E8004297D4 /* StorageRef.m */,

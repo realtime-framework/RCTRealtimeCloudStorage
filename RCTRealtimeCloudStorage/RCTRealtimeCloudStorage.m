@@ -93,7 +93,7 @@ RCT_EXPORT_METHOD(init:(NSString*) aApplicationKey privateKey:(NSString*) aPriva
     [_storageRefs setObject:storageref forKey:pid];
 }
 
-RCT_EXPORT_METHOD(initCustom:(NSString*) aApplicationKey privateKey:(NSString*) aPrivateKey authenticationToken:(NSString*) aAuthenticationToken isCluster:(Boolean) aIsCluster isSecure:(Boolean) aIsSecure url:(NSString*) aUrl ide:(NSString*)pid)
+RCT_EXPORT_METHOD(initCustom:(NSString*) aApplicationKey privateKey:(NSString*) aPrivateKey authenticationToken:(NSString*) aAuthenticationToken isCluster:(BOOL) aIsCluster isSecure:(BOOL) aIsSecure url:(NSString*) aUrl ide:(NSString*)pid)
 {
     if (!_storageRefs) {
         _storageRefs = [[NSMutableDictionary alloc] init];
@@ -257,7 +257,7 @@ RCT_EXPORT_METHOD(greaterEqualNumber: (NSString*) item value:(NSNumber*) value s
     TableRef *tableRef = [sRefs objectForKey:table];
     [tableRef greaterEqualNumber:item value:value];
 }
-RCT_EXPORT_METHOD(greaterThanString: (NSString*) item value:(NSObject*) value storage:(NSString*)sId table:(NSString*)table){
+RCT_EXPORT_METHOD(greaterThanString: (NSString*) item value:(id) value storage:(NSString*)sId table:(NSString*)table){
     NSMutableDictionary *sRefs = [_tableRefs objectForKey:sId];
     TableRef *tableRef = [sRefs objectForKey:table];
     [tableRef greaterThanString:item value:value];
