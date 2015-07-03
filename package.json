@@ -1,6 +1,6 @@
 {
   "name": "react-native-realtimestorage-ios",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The Realtime Framework Cloud Storage client for React-Native",
   "main": "RCTRealtimeCloudStorageIOS.js",
   "scripts": {

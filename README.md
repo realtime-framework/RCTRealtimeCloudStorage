@@ -16,6 +16,9 @@ If you are a developer, you can use Realtime Cloud Storage to create database ta
 
 * Drag RCTRealtimeCloudStorage.xcodeproj from the node_modules/react-native-realtimestorage-ios folder into your XCode project. Click on the project 	in XCode, goto Build Phases then Link Binary With Libraries and add 	libRCTRCTRealtimeCloudStorage.a
 
+* Drag RCTRealtimeCloudStorage.js to your root project directory.
+
+
  You are ready to go.
 
 ## The todo list example
