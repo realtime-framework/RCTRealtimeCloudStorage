@@ -17,11 +17,11 @@ var RTEvents = {};
 var instances = 0;
 
 class RCTRealtimeCloudStorageIOS extends React.Component {
-	sId:Number;
+	sId:String;
 
 	constructor(props) {
     	super(props);
-    	this.sId = instances++;
+    	this.sId = ""+instances++;
 	}
 
 	static RTEventListener(notification, callBack: Function){
@@ -49,10 +49,12 @@ class RCTRealtimeCloudStorageIOS extends React.Component {
 
 	storageRef(aApplicationKey, aPrivateKey, aAuthenticationToken){
 		storage.init(aApplicationKey, aPrivateKey, aAuthenticationToken, this.sId);
+		return this;
 	}
 
 	storageRefCustom(aApplicationKey, aPrivateKey, aAuthenticationToken, aIsCluster, aIsSecure, aUrl){
 		storage.initCustom(aApplicationKey, aPrivateKey, aAuthenticationToken, aIsCluster, aIsSecure, aUrl, this.sId);
+		return this;
 	}
 
 	getTables(success:Function, error:Function){
@@ -66,6 +68,7 @@ class RCTRealtimeCloudStorageIOS extends React.Component {
 				success(data);
 			}
 		});
+		return this;
 	}
 
 	table(tableName)
@@ -87,15 +90,16 @@ class RCTRealtimeCloudStorageIOS extends React.Component {
 				success(data);
 			}
 		});
+		return this;
 	}
 
 	onReconnected(callback: Function){
-		storage.onReconnected(aAuthenticationToken, this.sId);
+		storage.onRTSReconnected(this.sId);
 		RCTRealtimeCloudStorageIOS.RTEventListener(this.sId + "-onReconnected", callback);
 	}
 
 	onReconnecting(callback: Function){
-		storage.onReconnected(aAuthenticationToken, this.sId);
+		storage.onRTSReconnecting(this.sId);
 		RCTRealtimeCloudStorageIOS.RTEventListener(this.sId + "-onReconnecting", callback);
 	}
 
